@@ -1,0 +1,9 @@
+<h1>Posts</h1>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li><%= link_to "Post No. #{post.id}", "/posts/#{post.id}" %></li>
+    <%= post%>
+  <% end %>
+</ul>
+
